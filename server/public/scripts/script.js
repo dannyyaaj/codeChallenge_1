@@ -44,7 +44,6 @@ function start() {
 
 function handleEvents() {
   $('#submit').on('click', handleSubmit);
-  $('#submit').on('click', updateTotalMonthly);
   $('#employeeTable').on('click', '.deleteBtn', handleDeleteButton);
 }
 
@@ -54,8 +53,7 @@ function handleSubmit() {
   let lName = $('#employeeLastName').val();
   let id = $('#employeeId').val();
   let title = $('#employeeTitle').val();
-  let salary = parseInt(`${$(('#employeeSalary').toLocaleString('en')).val()}`);
-
+  let salary = parseInt($(('#employeeSalary').toLocaleString('en')).val());
 
   // initialize new employee object from input fields and push it into array
   let newEmployee = new Employee(fName, lName, id, title, salary);
@@ -76,6 +74,8 @@ function handleSubmit() {
   $('#employeeId').val('');
   $('#employeeTitle').val('');
   $('#employeeSalary').val('');
+
+  updateTotalMonthly();
 }
 
 // function add rows of new eployees
