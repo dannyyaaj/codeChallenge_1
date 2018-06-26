@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="vendors/jquery-3.3.1.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Salary Calculator</title>
+</head>
+
+<body class="container">
+  <div id="containerSection">
+    <header>
+      <h1>Salary Calculator</h1>
+    </header>
+    <main>
+      <h3>Add Employee</h3>
+      <div class="inputSection form-group">
+        <input id="employeeFirstName" class="inputStyle" type="text" placeholder="First Name" required/>
+        <input id="employeeLastName" class="inputStyle" type="text" placeholder="Last Name" required/>
+        <input id="employeeId" class="inputStyle" type="text" placeholder="ID" required/>
+        <input id="employeeTitle" class="inputStyle" type="text" placeholder="Title" required/>
+        <input id="employeeSalary" class="inputStyle" type="text" placeholder="Annual Salary" required/>
+        <button id="submit" class="inputStyle btn btn-dark">Submit</button>
+      </div>
+      <div class="tableSection table-responsive-md">
+        <table class="table table-striped table-md table-bordered">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Annual Salary</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTable">
+
+          </tbody>
+        </table>
+      </div>
+      <div id="totalMonthlySection" class="float-right
+      ">
+        <p>Total Monthly:
+          <span id="totalMonthly"></span>
+        </p>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

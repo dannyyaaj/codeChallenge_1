@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Metrophobic');
+body {
+  font-family: 'Metrophobic', sans-serif;
+}
+
+header {
+  background-color: midnightblue;
+  color: white;
+  padding: 1rem 0rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h1,
+h3 {
+  margin: 1.5rem 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.inputStyle {
+  margin-right: 1rem;
+  outline-color: green;
+}
+
+table {
+  text-align: center;
+}
+
+#totalMonthlySection p {
+  font-weight: bold;
+}
+
+#totalMonthly {
+  font-weight: bold;
+}
+
+.fontRed {
+  background: red;
+}
